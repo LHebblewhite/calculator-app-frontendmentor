@@ -7,14 +7,14 @@ let outputNumber = 0;
 function numberPressed(num){
     if(operatorSelected){
         if (secondVar > 0) {
-            secondVar = str(secondVar) + num;
+            secondVar = secondVar + num;
         } else{
             secondVar = num;
         }
         outputNumber = secondVar
     } else {
         if (firstVar > 0){
-            firstVar = str(secondVar) + num
+            firstVar = secondVar + num
         } else{
             firstVar = num;
         }
