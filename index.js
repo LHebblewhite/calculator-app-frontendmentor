@@ -42,11 +42,11 @@ function operatorPressed(op){
     operatorSelected = true;
     operatorVar = op; 
     outputNumber = secondVar;
-    
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
 
 function equalsPressed(){ 
+    alert("here")
     if (firstVar > 0){
         equalsSelected = true;
         if (equalsTotal == 0){
