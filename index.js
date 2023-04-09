@@ -8,6 +8,7 @@ let outputNumber = 0;
 let themeSlider = document.getElementById("themeSlider")
 
 function numberPressed(num){
+    document.getElementById("calcDisplay").style.justifyContent = "right";
     if (operatorSelected){
         if (secondVar > 0){
             secondVar = String(secondVar) + num;
@@ -75,6 +76,9 @@ function equalsPressed(){
         equalsTotal = outputNumber;
         operatorSelected = false;      
         document.getElementById("calcOutput").innerHTML = outputNumber;
+        if(String(outputNumber).length > 12){
+            document.getElementById("calcDisplay").style.justifyContent = "left";
+        }
     }
 }
 
@@ -86,6 +90,8 @@ function resetPressed(){
     equalsSelected = false;
     outputNumber = firstVar; 
     document.getElementById("calcOutput").innerHTML = outputNumber;
+    document.getElementById("calcDisplay").style.justifyContent = "right";
+
 }
 
 themeSlider.oninput = function() {
