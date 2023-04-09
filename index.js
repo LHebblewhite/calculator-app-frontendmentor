@@ -79,7 +79,7 @@ function resetPressed(){
     firstVar = 0; 
     secondVar = 0; 
     operatorSelected = false;
-    equalsSelected = true;
+    equalsSelected = false;
     outputNumber = firstVar; 
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
