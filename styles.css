@@ -1,7 +1,7 @@
 body{ 
     background-color:hsl(222, 26%, 31%);
     font-size: 15px;
-    font: "League Spartan";
+    font-family: "League Spartan";
     padding: 20px;
 }
 h1{ 
