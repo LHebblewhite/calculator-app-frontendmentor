@@ -20,5 +20,6 @@ function numberPressed(num){
         }
         outputNumber = firstVar
     }
+    alert("here")
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
