@@ -6,6 +6,7 @@ body{
 }
 h1{ 
     margin-bottom:1px;
+    color: white;
 }
 .calcHeader, .themeNumbers{ 
     display: flex;
@@ -20,6 +21,7 @@ h1{
     justify-content: right;
     align-items: end;
     height: auto;
+    color: white;
 }
 .themeSelectorUI{
     display: flex; 
