@@ -13,7 +13,7 @@ function numberPressed(num){
         }
         outputNumber = secondVar
     } else {
-        if (firstvar > 0){
+        if (firstVar > 0){
             firstVar = str(secondVar) + num
         } else{
             firstVar = num;
