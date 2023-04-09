@@ -148,7 +148,9 @@ themeSlider.oninput = function() {
     }
     document.body.style.backgroundColor = mainBackgroundColor; 
     document.getElementById("calcInput").style.backgroundColor = sectionBackgroundColor;
-    document.getElementById("themeSelectorSliderContainer").style.backgroundColor
+    document.getElementById("themeSelectorSliderContainer").style.backgroundColor = sectionBackgroundColor
+    document.getElementById("themeSlider").style.backgroundColor = sectionBackgroundColor
+    document.querySelector(":root").style.setProperty("--slider-thumb-color", equalsButtonColor);
     document.getElementById("calcDisplay").style.backgroundColor = screenBackgroundColor;
     let elementList = document.getElementsByClassName("numAndOpButtons");
     for (var i=0; i < elementList.length; i++){
@@ -162,8 +164,12 @@ themeSlider.oninput = function() {
     }
     document.getElementById("equalsButton").style.backgroundColor = equalsButtonColor;
     document.getElementById("equalsButton").style.boxShadow = ("0px 5px " + equalsButtonShadowColor);
-    document.getElementById("title").style.backgroundColor = headerAndOutputTextColor;
-    document.getElementById("calcOutput").style.backgroundColor = headerAndOutputTextColor;
+    document.getElementById("title").style.color = headerAndOutputTextColor;
+    document.getElementById("calcOutput").style.color = headerAndOutputTextColor;
+    elementList = document.getElementsByClassName("themeSelectorText");
+    for (var i=0; i < elementList.length; i++){
+        elementList[i].style.color = headerAndOutputTextColor;
+    }
     elementList = document.getElementsByClassName("numAndOpText");
     for (var i=0; i < elementList.length; i++){
         elementList[i].style.color = numberTextColor;

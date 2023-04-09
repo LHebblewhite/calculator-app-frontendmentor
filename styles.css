@@ -1,3 +1,6 @@
+:root{
+    --slider-thumb-color:hsl(6, 63%, 50%);
+}
 body{ 
     background-color:hsl(222, 26%, 31%);
     font-size: 15px;
@@ -21,7 +24,6 @@ h1{
     justify-content: right;
     align-items: end;
     height: auto;
-    color:white;
 }
 .themeSelectorUI{
     display: flex; 
@@ -40,6 +42,7 @@ h1{
 .themeSelectorText{ 
     font-size: 10px;
     margin-bottom:2px;
+    color:white;
 }
 #themeSelectorSliderContainer{ 
     background-color: hsl(224, 36%, 15%);
@@ -49,37 +52,42 @@ h1{
     padding-left: 2px;
     padding-right: 5px;
 }
-.themeSelectorSlider{
+#themeSlider{
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
     background: hsl(224, 36%, 15%);
     outline: none;
 }
-.themeSelectorSlider::-webkit-slider-thumb{
+#themeSlider::-webkit-slider-thumb{
     -webkit-appearance: none;
     appearance: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: hsl(6, 63%, 50%);
+    background: var(--slider-thumb-color,hsl(6, 63%, 50%));
     cursor: pointer; 
 }
 #calcDisplay{
     display: flex; 
     background-color:hsl(224, 36%, 15%);
     border-radius: 10px;
-    padding:5px; 
+    padding-left: 30px;
+    padding-right: 30px;
     justify-content: right; 
-    color:white; 
-    font-size: 25px;
     overflow: clip;
+}
+#calcOutput{
+    color:white; 
+    font-size: 45px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 #calcInput{
     display: grid;
     column-gap: 5%;
     background-color:hsl(223, 31%, 20%);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     margin-top: 20px;
 }
@@ -98,7 +106,7 @@ h1{
     cursor: pointer;
 }
 .numAndOpButtons:active{
-    background-color: white;
+    filter: brightness(120%);
 }
 .quadrantButtons{
     display: flex;
@@ -123,6 +131,12 @@ h1{
     box-shadow: 0px 5px hsl(224, 28%, 35%);
     padding: 5px; 
 }
+.resetAndDeleteButton:hover{ 
+    cursor: pointer;
+}
+.resetAndDeleteButton:active{
+    filter: brightness(120%);
+}
 .resetAndDeleteButtonText{
     color:white;
     font-weight: bold;
@@ -133,6 +147,12 @@ h1{
     box-shadow: 0px 5px hsl(6, 70%, 34%);
     padding: 5px; 
     
+}
+#equalsButton:hover{
+    cursor: pointer;
+}
+#equalsButton:active{
+    filter: brightness(120%);
 }
 #equalsButtonText{
     color:white;
