@@ -48,8 +48,14 @@ function equalsPressed(){
     equalsSelected = true;
     if ((firstVar > 0))
         if(operatorVar == "+"){
-            outputNumber = Number(firstVar) + Number(secondVar)
-        }
+            outputNumber = Number(firstVar) + Number(secondVar);
+        } else if (operatorVar == "-") {
+            outputNumber = Number(firstVar) - Number(secondVar);
+        } else if (operatorVar == "/") {
+            outputNumber = Number(firstVar) / Number(secondVar);
+        } else {
+            outputNumber = Number(firstVar) * Number(secondVar);
+        }        
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
 
