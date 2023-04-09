@@ -25,7 +25,7 @@ function numberPressed(num){
 }
 
 function deletePressed(){
-    if ((operatorSelected) && (outputNumber != 0)) {
+    if ((operatorSelected) && (outputNumber != 0) && (equalsSelected == false)) {
         secondVar = String(secondVar);
         secondVar.length > 1 ? secondVar = secondVar.substring(0, secondVar.length-1) : secondVar = 0; 
         outputNumber = secondVar;
@@ -42,13 +42,13 @@ function operatorPressed(op){
     operatorVar = op; 
     if (equalsSelected){
         if(operatorVar == "+"){
-            outputNumber = Number(firstVar) + Number(outputNumber);
+            outputNumber = Number(outputNumber) + Number(firstVar);
         } else if (operatorVar == "-") {
-            outputNumber = Number(firstVar) - Number(outputNumber);
+            outputNumber = Number(outputNumber) - Number(firstVar);
         } else if (operatorVar == "/") {
-            outputNumber = Number(firstVar) / Number(outputNumber);
+            outputNumber = Number(outputNumber) / Number(firstVar);
         } else {
-            outputNumber = Number(firstVar) * Number(outputNumber);
+            outputNumber = Number(outputNumber) * Number(firstVar);
         }
     } else {
         outputNumber = secondVar;
