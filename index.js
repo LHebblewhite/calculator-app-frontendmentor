@@ -3,11 +3,12 @@ let secondVar = 0;
 let operatorVar = "+";
 let operatorSelected = false; 
 let equalsSelected = false;
+let equalsTotal = 0;
 let outputNumber = 0; 
 
 function numberPressed(num){
-    if(operatorSelected){
-        if (secondVar > 0) {
+    if (operatorSelected){
+        if (secondVar > 0){
             secondVar = String(secondVar) + num;
         } else{
             secondVar = num;
@@ -25,7 +26,7 @@ function numberPressed(num){
 }
 
 function deletePressed(){
-    if ((operatorSelected) && (outputNumber != 0) && (equalsSelected == false)) {
+    if ((operatorSelected) && (outputNumber != 0)) {
         secondVar = String(secondVar);
         secondVar.length > 1 ? secondVar = secondVar.substring(0, secondVar.length-1) : secondVar = 0; 
         outputNumber = secondVar;
@@ -40,19 +41,7 @@ function deletePressed(){
 function operatorPressed(op){
     operatorSelected = true;
     operatorVar = op; 
-    if (equalsSelected){
-        if(operatorVar == "+"){
-            outputNumber = Number(outputNumber) + Number(firstVar);
-        } else if (operatorVar == "-") {
-            outputNumber = Number(outputNumber) - Number(firstVar);
-        } else if (operatorVar == "/") {
-            outputNumber = Number(outputNumber) / Number(firstVar);
-        } else {
-            outputNumber = Number(outputNumber) * Number(firstVar);
-        }
-    } else {
-        outputNumber = secondVar;
-    }
+    outputNumber = secondVar;
     
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
@@ -60,17 +49,31 @@ function operatorPressed(op){
 function equalsPressed(){ 
     if (firstVar > 0){
         equalsSelected = true;
-        if(operatorVar == "+"){
-            outputNumber = Number(firstVar) + Number(secondVar);
-        } else if (operatorVar == "-") {
-            outputNumber = Number(firstVar) - Number(secondVar);
-        } else if (operatorVar == "/") {
-            outputNumber = Number(firstVar) / Number(secondVar);
-        } else {
-            outputNumber = Number(firstVar) * Number(secondVar);
-        }  
+        if (equalsTotal == 0){
+            if(operatorVar == "+"){
+                outputNumber = Number(firstVar) + Number(secondVar);
+            } else if (operatorVar == "-") {
+                outputNumber = Number(firstVar) - Number(secondVar);
+            } else if (operatorVar == "/") {
+                outputNumber = Number(firstVar) / Number(secondVar);
+            } else {
+                outputNumber = Number(firstVar) * Number(secondVar);
+            } 
+            secondVar = 0;
+        } else { 
+            if(operatorVar == "+"){
+                outputNumber = equalsTotal + Number(firstVar);
+            } else if (operatorVar == "-") {
+                outputNumber = equalsTotal - Number(firstVar);
+            } else if (operatorVar == "/") {
+                outputNumber = equalsTotal / Number(firstVar);
+            } else {
+                outputNumber = equalsTotal * Number(firstVar);
+            } 
+        }
         firstVar = 0;
-        secondVar = 0;       
+        equalsTotal = outputNumber;
+        operatorPressed = false;      
         document.getElementById("calcOutput").innerHTML = outputNumber;
     }
 }
@@ -78,6 +81,7 @@ function equalsPressed(){
 function resetPressed(){ 
     firstVar = 0; 
     secondVar = 0; 
+    equalsTotal = 0;
     operatorSelected = false;
     equalsSelected = false;
     outputNumber = firstVar; 
