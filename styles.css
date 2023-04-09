@@ -1,12 +1,13 @@
 :root{
     --slider-thumb-color:hsl(6, 63%, 50%);
 }
-body{ 
+body{
     background-color:hsl(222, 26%, 31%);
     font-size: 15px;
     font-family: "League Spartan";
     padding: 20px;
     overflow-y: hidden;
+    justify-content: center;
 }
 h1{ 
     margin-bottom:1px;
@@ -15,6 +16,7 @@ h1{
 .calcHeader, .themeNumbers{ 
     display: flex;
     flex-direction: row;
+    align-content: center;
 }
 .calcHeader{ 
     justify-content: space-between;
@@ -164,15 +166,18 @@ h1{
 .resetAndEqualsButton{ 
     display: flex;
     justify-content: center;
-    width: 45%;
+    width: 105px;
     border-radius: 10px;
 }
 @media screen and (min-width:768px){
     body{
-        margin-left:100px;
-        margin-right:100px; 
-    }
-    #calcInput, .calcHeader, #calcDisplay{
-        width: 60%;
-    }    
+        margin-left: 25%;
+        margin-right: 25%; 
+    } 
+    .quadrantButtons{
+        width: 75px;
+    } 
+    .resetAndEqualsButton{
+        width: 44%;
+    } 
 }
