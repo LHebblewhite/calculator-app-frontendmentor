@@ -14,7 +14,7 @@ function numberPressed(num){
         outputNumber = secondVar
     } else {
         if (firstVar > 0){
-            firstVar = secondVar + num
+            firstVar = firstVar + num
         } else{
             firstVar = num;
         }
