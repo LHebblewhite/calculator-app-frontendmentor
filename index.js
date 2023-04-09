@@ -46,8 +46,7 @@ function operatorPressed(op){
 }
 
 function equalsPressed(){ 
-    alert("here")
-    if (firstVar > 0){
+    if (secondVar > 0){
         equalsSelected = true;
         if (equalsTotal == 0){
             if(operatorVar == "+"){
@@ -58,20 +57,20 @@ function equalsPressed(){
                 outputNumber = Number(firstVar) / Number(secondVar);
             } else {
                 outputNumber = Number(firstVar) * Number(secondVar);
-            } 
-            secondVar = 0;
+            }    
+            firstVar = 0;
         } else { 
             if(operatorVar == "+"){
-                outputNumber = equalsTotal + Number(firstVar);
+                outputNumber = equalsTotal + Number(secondVar);
             } else if (operatorVar == "-") {
-                outputNumber = equalsTotal - Number(firstVar);
+                outputNumber = equalsTotal - Number(secondVar);
             } else if (operatorVar == "/") {
-                outputNumber = equalsTotal / Number(firstVar);
+                outputNumber = equalsTotal / Number(secondVar);
             } else {
-                outputNumber = equalsTotal * Number(firstVar);
+                outputNumber = equalsTotal * Number(secondVar);
             } 
         }
-        firstVar = 0;
+        secondVar = 0;
         equalsTotal = outputNumber;
         operatorSelected = false;      
         document.getElementById("calcOutput").innerHTML = outputNumber;
