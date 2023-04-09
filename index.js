@@ -10,14 +10,14 @@ let themeSlider = document.getElementById("themeSlider")
 function numberPressed(num){
     document.getElementById("calcDisplay").style.justifyContent = "right";
     if (operatorSelected){
-        if (secondVar > 0){
+        if ((secondVar > 0)|| (firstVar == ".")){
             secondVar = String(secondVar) + num;
         } else{
             secondVar = num;
         }
         outputNumber = secondVar;
     } else {
-        if (firstVar > 0){
+        if ((firstVar > 0) || (firstVar == ".")){
             firstVar = String(firstVar) + num;
         } else{
             firstVar = num;
