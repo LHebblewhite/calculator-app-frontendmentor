@@ -12,13 +12,18 @@ function numberPressed(num){
     if (operatorSelected){
         if ((secondVar > 0)|| (firstVar == ".")){
             secondVar = String(secondVar) + num;
-        } else{
+        } else if ((secondVar == 0) && (num == ".")){
+            secondVar = "0."
+        }else{
             secondVar = num;
         }
         outputNumber = secondVar;
     } else {
         if ((firstVar > 0) || (firstVar == ".")){
             firstVar = String(firstVar) + num;
+        } 
+        else if ((firstVar == 0) && (num == ".")){
+            firstVar = "0."
         } else{
             firstVar = num;
         }
