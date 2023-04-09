@@ -73,7 +73,7 @@ function equalsPressed(){
         }
         firstVar = 0;
         equalsTotal = outputNumber;
-        operatorPressed = false;      
+        operatorSelected = false;      
         document.getElementById("calcOutput").innerHTML = outputNumber;
     }
 }
