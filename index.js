@@ -22,3 +22,16 @@ function numberPressed(num){
     }
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
+
+function deletePressed(){
+    if ((operatorSelected) && (outputNumber != 0)) {
+        secondVar = String(secondVar)
+        secondVar.length > 1 ? secondVar = secondVar.substring(0, secondVar.length-1) : secondVar = 0; 
+        outputNumber = secondVar
+    } else {
+        firstVar = String(firstVar)
+        firstVar.length > 1 ? firstVar = firstVar.substring(0, firstVar.length-1) : firstVar = 0;
+        outputNumber = firstVar 
+    }
+    document.getElementById("calcOutput").innerHTML = outputNumber;
+}
