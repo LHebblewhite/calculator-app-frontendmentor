@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+
+<link href="./styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+<body>
+  <header class="calcHeader">
+    <h1>calc</h1>
+    <div class="themeSelector">
+      <p class="themeSelectorText themeHeader">THEME</p>
+      <div class="themeSelectorUI">
+        <div class="themeNumbers">
+          <p class="themeSelectorText">1</p>
+          <p class="themeSelectorText">2</p>
+          <p class="themeSelectorText">3</p>
+        </div>
+        <div class="themeSelectorSlider"> 
+          <svg width="14" height="14">
+            <circle cx="7" cy="7" r="7" fill="hsl(6, 63%, 50%)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="calcDisplay"> 
+        <p>output</p></p>
+    </section>
+    <section class="calcInput"> 
+      <div class="buttonRow">
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">7</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">8</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">9</p>
+        </div>
+        <div class="resetAndDeleteButton quadrantButtons">
+          <p class="resetAndDeleteButtonText">DEL</p>
+        </div>
+      </div>
+      <div class="buttonRow">
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText quadrantButtons">4</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">5</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">6</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">+</p>
+        </div>
+      </div>
+      <div class="buttonRow">
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">1</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">2</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">3</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">-</p>
+        </div>
+      </div>
+      <div class="buttonRow">
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">.</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">0</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">/</p>
+        </div>
+        <div class="numAndOpButtons quadrantButtons">
+          <p class="numAndOpText">x</p>
+        </div>
+      </div>
+      <div class="resetAndEqualRow">
+        <div class="resetAndDeleteButton resetAndEqualsButton">
+          <p class="resetAndDeleteButtonText">RESET</p>
+        </div>
+        <div class="equalsButton resetAndEqualsButton">
+          <p class="equalsButtonText">=</p>
+        </div>
+      </div>
+    </section>  
+  </main>
+</body>
+</html>

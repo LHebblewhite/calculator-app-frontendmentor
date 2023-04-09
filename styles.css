@@ -1,0 +1,120 @@
+body{ 
+    background-color:hsl(222, 26%, 31%);
+    font-size: 15px;
+    font: "League Spartan";
+    padding: 20px;
+}
+h1{ 
+    margin-bottom:1px;
+}
+.calcHeader, .themeNumbers{ 
+    display: flex;
+    flex-direction: row;
+}
+.calcHeader{ 
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.themeSelector{ 
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    height: auto;
+}
+.themeSelectorUI{
+    display: flex; 
+    flex-direction: column;
+    width: 60px; 
+}
+.themeHeader{ 
+    margin-right:25px;
+    padding-bottom: 2px;
+}
+.themeNumbers{ 
+    justify-content: space-between;
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.themeSelectorText{ 
+    font-size: 10px;
+    margin-bottom:2px;
+}
+.themeSelectorSlider{ 
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.calcDisplay{
+    display: flex; 
+    background-color:hsl(224, 36%, 15%);
+    border-radius: 10px;
+    padding:5px; 
+    justify-content: right;  
+}
+.calcInput{
+    display: grid;
+    column-gap: 5%;
+    background-color:hsl(223, 31%, 20%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.buttonRow{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.numAndOpButtons{ 
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0px 5px hsl(28, 16%, 65%);
+    padding: 5px;
+}
+.quadrantButtons{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+}
+.numAndOpText{
+    color:hsl(221, 14%, 31%);
+    font-weight: bold;
+    font-size: 25px;
+}
+.resetAndEqualRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.resetAndDeleteButton{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0px 5px hsl(224, 28%, 35%);
+    padding: 5px; 
+}
+.resetAndDeleteButtonText{
+    color:white;
+    font-weight: bold;
+    align-self: center;
+}
+.equalsButton{
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0px 5px hsl(6, 70%, 34%);
+    padding: 5px; 
+    
+}
+.equalsButtonText{
+    color:white;
+    font-weight: bold;
+    align-self: center;
+}
+.resetAndEqualsButton{ 
+    display: flex;
+    justify-content: center;
+    width: 46%;
+    border-radius: 10px;
+}
