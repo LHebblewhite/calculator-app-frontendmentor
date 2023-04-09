@@ -40,7 +40,7 @@ function deletePressed(){
 function operatorPressed(op){
     operatorSelected = true;
     operatorVar = op; 
-    if (equalsPressed){
+    if (equalsSelected){
         if(operatorVar == "+"){
             outputNumber = Number(firstVar) + Number(outputNumber);
         } else if (operatorVar == "-") {
