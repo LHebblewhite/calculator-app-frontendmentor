@@ -1,5 +1,6 @@
 let firstVar = 0;
 let secondVar = 0;
+let operatorVar = "+";
 let operatorSelected = false; 
 let resetSelected = false;
 let outputNumber = 0; 
