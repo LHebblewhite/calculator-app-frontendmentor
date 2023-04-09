@@ -57,6 +57,7 @@ h1{
     justify-content: right; 
     color:white; 
     font-size: 25px;
+    overflow: clip;
 }
 .calcInput{
     display: grid;
