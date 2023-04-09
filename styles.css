@@ -41,7 +41,7 @@ h1{
     font-size: 10px;
     margin-bottom:2px;
 }
-.themeSelectorSliderContainer{ 
+#themeSelectorSliderContainer{ 
     background-color: hsl(224, 36%, 15%);
     border-radius: 20px;
     padding-bottom: 2px;
@@ -65,7 +65,7 @@ h1{
     background: hsl(6, 63%, 50%);
     cursor: pointer; 
 }
-.calcDisplay{
+#calcDisplay{
     display: flex; 
     background-color:hsl(224, 36%, 15%);
     border-radius: 10px;
@@ -75,7 +75,7 @@ h1{
     font-size: 25px;
     overflow: clip;
 }
-.calcInput{
+#calcInput{
     display: grid;
     column-gap: 5%;
     background-color:hsl(223, 31%, 20%);
@@ -128,13 +128,13 @@ h1{
     font-weight: bold;
     align-self: center;
 }
-.equalsButton{
+#equalsButton{
     background-color: hsl(6, 63%, 50%);
     box-shadow: 0px 5px hsl(6, 70%, 34%);
     padding: 5px; 
     
 }
-.equalsButtonText{
+#equalsButtonText{
     color:white;
     font-weight: bold;
     align-self: center;

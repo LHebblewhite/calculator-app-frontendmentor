@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
 <body>
   <header class="calcHeader">
-    <h1>calc</h1>
+    <h1 id="title">calc</h1>
     <div class="themeSelector">
       <p class="themeSelectorText themeHeader">THEME</p>
       <div class="themeSelectorUI">
@@ -22,17 +22,17 @@
           <p class="themeSelectorText">2</p>
           <p class="themeSelectorText">3</p>
         </div>
-        <div class="themeSelectorSliderContainer"> 
-          <input type="range" min="1" max="3" step="1" value="1" class="themeSelectorSlider">
+        <div id="themeSelectorSliderContainer"> 
+          <input type="range" min="1" max="3" step="1" value="1" class="themeSelectorSlider" id="themeSlider">
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="calcDisplay"> 
+    <section id="calcDisplay"> 
         <p id="calcOutput">0</p></p>
     </section>
-    <section class="calcInput"> 
+    <section id="calcInput"> 
       <div class="buttonRow">
         <div class="numAndOpButtons quadrantButtons" onclick="numberPressed(7)">
           <p class="numAndOpText">7</p>
@@ -93,8 +93,8 @@
         <div class="resetAndDeleteButton resetAndEqualsButton" onclick="resetPressed()">
           <p class="resetAndDeleteButtonText">RESET</p>
         </div>
-        <div class="equalsButton resetAndEqualsButton" onclick="equalsPressed()">
-          <p class="equalsButtonText">=</p>
+        <div id="equalsButton" class="resetAndEqualsButton" onclick="equalsPressed()">
+          <p id="equalsButtonText">=</p>
         </div>
       </div>
     </section> 
