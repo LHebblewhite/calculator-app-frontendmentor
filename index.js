@@ -8,7 +8,7 @@ let outputNumber = 0;
 function numberPressed(num){
     if(operatorSelected){
         if (secondVar > 0) {
-            secondVar = secondVar + num;
+            secondVar = String(secondVar) + num;
         } else{
             secondVar = num;
         }
@@ -46,7 +46,7 @@ function operatorPressed(op){
 
 function equalsPressed(){ 
     equalsSelected = true;
-    if ((firstVar > 0) && (secondVar > 0))
+    if ((firstVar > 0))
         if(operatorVar == "+"){
             outputNumber = Number(firstVar) + Number(secondVar)
         }
