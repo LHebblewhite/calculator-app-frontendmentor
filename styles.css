@@ -8,8 +8,9 @@ body{
     font-size: 15px;
     font-family: "League Spartan";
     overflow-y: hidden;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    padding-top: 10px;
 }
 h1{ 
     margin-bottom:1px;
@@ -188,8 +189,7 @@ h1{
 }
 @media screen and (min-width:768px){
     body{
-        margin-left: 25%;
-        margin-right: 25%; 
+        padding-top: 40px;
     }
     .calcHeader{
         width: 410px;
