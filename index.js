@@ -40,13 +40,26 @@ function deletePressed(){
 function operatorPressed(op){
     operatorSelected = true;
     operatorVar = op; 
-    outputNumber = secondVar;
+    if (equalsPressed){
+        if(operatorVar == "+"){
+            outputNumber = Number(firstVar) + Number(outputNumber);
+        } else if (operatorVar == "-") {
+            outputNumber = Number(firstVar) - Number(outputNumber);
+        } else if (operatorVar == "/") {
+            outputNumber = Number(firstVar) / Number(outputNumber);
+        } else {
+            outputNumber = Number(firstVar) * Number(outputNumber);
+        }
+    } else {
+        outputNumber = secondVar;
+    }
+    
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
 
 function equalsPressed(){ 
-    equalsSelected = true;
-    if ((firstVar > 0))
+    if (firstVar > 0){
+        equalsSelected = true;
         if(operatorVar == "+"){
             outputNumber = Number(firstVar) + Number(secondVar);
         } else if (operatorVar == "-") {
@@ -55,8 +68,11 @@ function equalsPressed(){
             outputNumber = Number(firstVar) / Number(secondVar);
         } else {
             outputNumber = Number(firstVar) * Number(secondVar);
-        }        
-    document.getElementById("calcOutput").innerHTML = outputNumber;
+        }  
+        firstVar = 0;
+        secondVar = 0;       
+        document.getElementById("calcOutput").innerHTML = outputNumber;
+    }
 }
 
 function resetPressed(){ 
