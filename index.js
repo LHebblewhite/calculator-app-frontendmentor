@@ -45,6 +45,10 @@ function deletePressed(){
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
 
+function startDeletePressed (){
+    setInterval(deletePressed(), 500)
+}
+
 function operatorPressed(op){
     operatorSelected = true;
     operatorVar = op; 
