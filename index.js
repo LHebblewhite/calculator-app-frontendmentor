@@ -45,7 +45,7 @@ function deletePressed(){
     document.getElementById("calcOutput").innerHTML = outputNumber;
 }
 
-function startDeletePressed (){
+function startDeletePressed(){
     setInterval(deletePressed(), 500)
 }
 
