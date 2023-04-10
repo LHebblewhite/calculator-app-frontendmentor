@@ -90,13 +90,8 @@ h1{
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: right;
-    direction:rtl;
+    direction: rtl;
     overflow: clip;
-}
-#outputTextBoundary{
-    display:flex; 
-    justify-content: right; 
-    width: 100%;
 }
 #calcInput{
     display: grid;
@@ -234,5 +229,6 @@ h1{
     }
     .resetAndEqualsButton{
         width: 170px;
+        height: auto;
     } 
 }
