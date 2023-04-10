@@ -51,10 +51,8 @@ function startDeletePressed(){
     if (deleteFirstPress){
         deletePressed();
         deleteFirstPress = false;
-    } else{
-        deleteInterval = setInterval(deletePressed, 200); 
-    }
-
+    } 
+    deleteInterval = setInterval(deletePressed, 200); 
 }
 
 function stopDeletePressed(){ 
