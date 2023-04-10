@@ -79,17 +79,18 @@ h1{
     display: flex; 
     background-color:hsl(224, 36%, 15%);
     border-radius: 10px;
-    margin-left: 20px;
+    padding-left: 30px;
     padding-right: 30px;
     justify-content: right; 
-    overflow: clip;
-    width: 275px;
+    width: 265px;
 }
 #calcOutput{
     color:white; 
     font-size: 45px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border:1px solid;
+    overflow: clip;
 }
 #calcInput{
     display: grid;
@@ -198,7 +199,7 @@ h1{
         width: 75px;
     } 
     #calcDisplay{
-        width: 375px;
+        width: 365px;
     }
     #calcInput{
         grid-template-columns: repeat(4, 75px);
