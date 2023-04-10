@@ -96,6 +96,7 @@ h1{
 #calcInput{
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(5, 50px);
     grid-column-gap: 25px;
