@@ -89,7 +89,7 @@ h1{
     font-size: 45px;
     margin-top: 20px;
     margin-bottom: 20px;
-    overflow: clip;
+    overflow: hidden;
     text-align: right;
 }
 #calcInput{
