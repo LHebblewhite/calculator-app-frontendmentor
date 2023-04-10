@@ -153,7 +153,12 @@ h1{
     font-weight: bold;
     font-size: 25px;
     user-select: none;
-    -webkit-user-select: none;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
 }
 .resetAndDeleteButton{
     background-color: hsl(225, 21%, 49%);
@@ -170,8 +175,12 @@ h1{
     color:white;
     font-weight: bold;
     align-self: center;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
-    -webkit-user-select: none;
 }
 #equalsButton{
     background-color: hsl(6, 63%, 50%);
@@ -188,8 +197,12 @@ h1{
     color:white;
     font-weight: bold;
     align-self: center;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
-    -webkit-user-select: none;
 }
 .resetAndEqualsButton{ 
     display: flex;
@@ -233,6 +246,6 @@ h1{
     }
     .resetAndEqualsButton{
         width: 170px;
-        height: auto;
+        height: 100px;
     } 
 }
