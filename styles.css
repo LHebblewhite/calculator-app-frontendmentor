@@ -92,9 +92,10 @@ h1{
     text-align: right;
 }
 #outputTextBoundary{
-    border: 1px solid;
+    display:flex; 
+    justify-content: right; 
     width: 100%;
-    overflow: clip;
+    overflow: hidden;
 }
 #calcInput{
     display: grid;
