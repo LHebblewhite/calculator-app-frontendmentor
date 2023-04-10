@@ -50,7 +50,7 @@ function startDeletePressed(){
     deleteInterval = setInterval(deletePressed(), 500)
 }
 function stopDeletePressed(){ 
-    clearInterval(deleteInterval)
+    clearInterval(deleteInterval);
 }
 
 function operatorPressed(op){
