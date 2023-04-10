@@ -52,7 +52,7 @@ function startDeletePressed(){
         deletePressed();
         deleteFirstPress = false;
     } else {
-        deleteInterval = setInterval(deletePressed, 500);
+        deleteInterval = setInterval(deletePressed, 200);
     }   
 }
 
