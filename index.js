@@ -7,6 +7,7 @@ let equalsTotal = 0;
 let outputNumber = 0; 
 let themeSlider = document.getElementById("themeSlider");
 let deleteInterval;
+let deleteFirstPress = true;
 
 function numberPressed(num){
     document.getElementById("calcDisplay").style.justifyContent = "right";
@@ -47,12 +48,17 @@ function deletePressed(){
 }
 
 function startDeletePressed(){
+    if (deleteFirstPress){
+        deletePressed();
+        deleteFirstPress = false;
+    }
     deleteInterval = setInterval(deletePressed, 100);
 }
 
 function stopDeletePressed(){ 
     clearInterval(deleteInterval);
     deleteInterval = null;
+    deleteFirstPress = true;
 }
 
 function operatorPressed(op){
