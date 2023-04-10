@@ -195,6 +195,20 @@ h1{
     .calcHeader{
         width: 410px;
     } 
+    .themeSelectorUI{
+        width: 60px;  
+    }
+    .themeNumbers{ 
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+    .themeSelectorText{ 
+        font-size: 10px;
+    }
+    #themeSlider::-webkit-slider-thumb{
+        width: 15px;
+        height: 15px;
+    }
     .quadrantButtons{
         width: 75px;
     } 
