@@ -5,7 +5,7 @@ let operatorSelected = false;
 let equalsSelected = false;
 let equalsTotal = 0;
 let outputNumber = 0; 
-let themeSlider = document.getElementById("themeSlider")
+let themeSlider = document.getElementById("themeSlider");
 let deleteInterval;
 
 function numberPressed(num){
@@ -49,6 +49,7 @@ function deletePressed(){
 function startDeletePressed(){
     deleteInterval = setInterval(deletePressed, 500);
 }
+
 function stopDeletePressed(){ 
     clearInterval(deleteInterval);
     deleteInterval = null;
